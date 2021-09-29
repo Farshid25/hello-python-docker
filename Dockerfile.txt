@@ -1,0 +1,11 @@
+FROM python:3.7
+
+COPY . usr/src/myapp
+
+
+WORKDIR /usr/src/myapp
+
+RUN pip install pystrich
+#RUN python hello.py
+
+CMD [ "python", "./hello.py" ]
